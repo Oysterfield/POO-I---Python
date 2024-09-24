@@ -1,0 +1,190 @@
+beecrowd | 1547
+Adivinha
+Por Neilor Tonin, URI BR Brazil
+
+Timelimit: 1
+O professor Genesio recebeu várias camisetas da OBI (Organização dos Bacharéis Intelectuais) para doar a seus alunos de Ciência da Computação. Para fazer a distribuição destas camisetas ele organizou os alunos de cada turma do curso em pequenos grupos (de no máximo 10 pessoas) e definiu que faria o sorteio de uma camiseta para cada um dos grupos. Como Genesio não quer perder muito tempo com este sorteio, ele pediu que você o ajudasse com um programa que determinasse quem foi o aluno ganhador de acordo com a seguinte regra: O primeiro de cada grupo a acertar um número escolhido pelo professor obviamente ganha a camiseta, mas se ninguém acertar este número, ganha a camiseta o primeiro que chegar o mais próximo deste número.
+
+Não faz diferença quem do grupo o professor escolhe para tentar iniciar a adivinhação. Este sempre será o aluno número 1, e assim sucessivamente.
+
+Entrada
+A primeira linha de entrada contém um inteiro N que determina a quantidade de casos de teste, ou de camisetas que serão sorteadas. Cada caso de teste é composto por duas linhas. A primeira linha contém dois valores inteiros QT (4 ≤ QT ≤ 10) e S (1 ≤ S ≤ 100) separados por um espaço, que indicam respectivamente a quantidade de alunos do grupo e o número secreto que deve ser adivinhado. A segunda linha contém cada um dos QT valores, separados por um espaço.
+
+Saída
+Para cada caso de teste, seu programa deve imprimir um número inteiro que indica a posição do ganhador da camiseta, conforme as regras descritas acima.
+
+Exemplo de Entrada	Exemplo de Saída
+3
+7 35
+8 26 30 43 36 17 7
+4 16
+12 16 3 16
+10 48
+3 7 27 9 50 49 16 47 63 1
+
+5
+2
+6
+
+
+
+beecrowd | 1743
+Máquina de Verificação Automatizada
+Por Ricardo Anido, UNICAMP BR Brasil
+
+Timelimit: 1
+A Internet Computer Parts Company (ICPC) é uma loja on-line que vende peças de computador. Pares de conectores elétricos em linha estão entre as peças mais populares que ICPC vende. No entanto, elas também são uma das peças que são devolvidos com mais freqüência por clientes insatisfeitos, porque devido a erros na embalagem os conectores enviados para os clientes podem não ser compatíveis..
+
+Um conector em-linha é constituído por cinco pontos de ligação, marcadas de 1 a 5. Cada ponto de ligação de um conector pode ser ou um plugue ou uma tomada. Dizemos dois conectores são compatíveis se, para cada rótulo, um ponto de conexão é um plugue e outro ponto de ligação é uma tomada (em outras palavras, dois conectores são compatíveis se, para cada ponto de conexão com o mesmo rótulo, um plugue e uma tomada se encontram quando os dois conectores estão conectados).
+
+A figura abaixo mostra exemplos de dois conectores que são compatíveis e dois conectores que não são compatíveis.
+
+
+
+ICPC está introduzindo uma Máquina de Verificação Automártica (ACM) de última geração, com um verificador óptico, que vai verificar se os dois conectores embalados para um cliente são realmente compatíveis. O complexo e caro hardware do ACM está pronto, mas eles precisam de sua ajuda para terminar o software.
+
+Dadas as descrições de um par de conectores em linha, sua tarefa é determinar se os conectores são compatíveis.
+
+Entrada
+A primeira linha contém cinco números inteiros Xi (0 ≤ Xi≤ 1 para i = 1, 2,..., 5), que representa os pontos de conexão do primeiro conector do par. A segunda linha contém cinco números inteiros Yi (0 ≤ Yi ≤ 1 para i = 1, 2,..., 5), que representa os pontos de conexão do segundo conector. Na entrada, um 0 representa uma tomada e um 1 representa um plugue.
+
+Saída
+Apresente uma linha com um caractere que representa se os conectores são compatíveis ou não. Se eles são compatíveis escrever a letra maiúscula "Y"; caso contrário, escrever a letra maiúscula "N".
+
+Exemplos de Entrada	Exemplos de Saída
+1 1 0 1 0
+0 0 1 0 1
+
+Y
+
+1 0 0 1 0
+1 0 1 1 0
+
+N
+
+
+
+beecrowd | 1172
+Substituição em Vetor I
+Adaptado por Neilor Tonin, URI  Brasil
+
+Timelimit: 1
+Faça um programa que leia um vetor X[10]. Substitua a seguir, todos os valores nulos e negativos do vetor X por 1. Em seguida mostre o vetor X.
+
+Entrada
+A entrada contém 10 valores inteiros, podendo ser positivos ou negativos.
+
+Saída
+Para cada posição do vetor, escreva "X[i] = x", onde i é a posição do vetor e x é o valor armazenado naquela posição.
+
+Exemplo de Entrada	Exemplo de Saída
+0
+-5
+63
+0
+...
+
+X[0] = 1
+X[1] = 1
+X[2] = 63
+X[3] = 1
+...
+
+
+
+
+beecrowd | 1173
+Preenchimento de Vetor I
+Adaptado por Neilor Tonin, URI  Brasil
+
+Timelimit: 1
+Leia um valor e faça um programa que coloque o valor lido na primeira posição de um vetor N[10]. Em cada posição subsequente, coloque o dobro do valor da posição anterior. Por exemplo, se o valor lido for 1, os valores do vetor devem ser 1,2,4,8 e assim sucessivamente. Mostre o vetor em seguida.
+
+Entrada
+A entrada contém um valor inteiro (V<=50).
+
+Saída
+Para cada posição do vetor, escreva "N[i] = X", onde i é a posição do vetor e X é o valor armazenado na posição i. O primeiro número do vetor N (N[0]) irá receber o valor de V.
+
+Exemplo de Entrada	Exemplo de Saída
+1
+
+N[0] = 1
+N[1] = 2
+N[2] = 4
+...
+
+
+
+
+beecrowd | 2399
+Campo Minado
+Por OBI - Olimpíada Brasileira de Informática 2011 BR Brazil
+
+Timelimit: 1
+Leonardo Viana é um garoto fascinado por jogos de tabuleiro. Nas férias de janeiro, ele aprendeu um jogo chamado "Campo minado", que é jogado em um tabuleiro comN células dispostas na horizontal. O objetivo desse jogo é determinar, para cada célula do tabuleiro, o número de minas explosivas nos arredores da mesma (que são a própria célula e as células imediatamente vizinhas à direita e à esquerda, caso essas existam). Por exemplo, a figura abaixo ilustra uma possível configuração de um tabuleiro com 5 células:
+
+
+
+A primeira célula não possui nenhuma mina explosiva, mas é vizinha de uma célula que possui uma mina explosiva. Nos arredores da segunda célula temos duas minas, e o mesmo acontece para a terceira e quarta células; a quinta célula só tem uma mina explosiva em seus arredores. A próxima figura ilustra a resposta para esse caso.
+
+
+
+Leonardo sabe que você participa da OBI e resolveu lhe pedir para escrever um programa de computador que, dado um tabuleiro, imprima o número de minas na vizinhança de cada posição. Assim, ele poderá conferir as centenas de tabuleiros que resolveu durante as férias.
+
+Entrada
+A primeira linha da entrada contém um inteiro N (1 ≤ N ≤ 50) indicando o número de células no tabuleiro. O tabuleiro é dado nas próximas N linhas. A i-ésima linha seguinte contém 0 se não existe mina na i-ésima célula do tabuleiro e 1 se existe uma mina na i-ésima célula do tabuleiro.
+
+Saída
+A saída é composta por N linhas. A i-ésima linha da saída contém o número de minas explosivas nos arredores da i-ésima célula do tabuleiro.
+
+Exemplos de Entrada	Exemplos de Saída
+5
+
+0
+
+1
+
+1
+
+0
+
+1
+
+
+
+1
+
+2
+
+2
+
+2
+
+1
+
+
+
+5
+
+0
+
+1
+
+1
+
+1
+
+0
+
+
+
+1
+
+2
+
+3
+
+2
+
+1

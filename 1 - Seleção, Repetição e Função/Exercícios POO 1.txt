@@ -1,0 +1,53 @@
+# Exercício 1003
+
+A = 30
+B = 10
+SOMA = A + B
+print(SOMA)
+
+A2 = int(input(-30))
+B2 = int(input(10))
+SOMA2 = A2 + B2
+print(SOMA2)
+
+A3 = int(input(0))
+B3 = int(input(0))
+SOMA3 = A3 + B3
+print(SOMA3)
+
+# Exercício 1004
+
+n1 = int(input(3))
+n2 = int(input(9))
+PROD = n1 * n2
+print(PROD)
+
+n3 = int(input(-30))
+n4 = int(input(10))
+PROD2 = n3 * n4
+print(PROD2)
+
+n5 = int(input(0))
+n6 = int(input(9))
+PROD3 = n5 * n6
+print(PROD3)
+
+# Exercício 1005
+
+A = 5.0
+B = 7.1
+MEDIA = A * 3.5 / 11 + B * 7.5 / 11
+print(MEDIA)
+
+# Exercício 1006
+# Exercício 1007
+# Exercício 1008
+# Exercício 2374
+# Exercício 2413
+# Exercício 1012
+# Exercício 1020
+# Exercício 1015
+# Exercício 1019
+# Exercício 1017
+# Exercício 1014
+# Exercício 1009
